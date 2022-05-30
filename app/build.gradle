@@ -50,7 +50,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
-
+    implementation 'com.google.android.material:material:1.7.0-alpha02'
     implementation "androidx.room:room-runtime:2.4.2"
     kapt "androidx.room:room-compiler:2.4.2"
     implementation "androidx.room:room-ktx:2.4.2"
@@ -58,4 +58,5 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
 
     implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.9'
+    implementation 'io.alterac.blurkit:blurkit:1.1.0'
 }

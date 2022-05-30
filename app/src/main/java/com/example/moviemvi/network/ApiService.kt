@@ -2,6 +2,7 @@ package com.example.moviemvi.network
 
 import com.example.moviemvi.models.Movie_Model
 import com.example.moviemvi.models.Result
+import com.example.moviemvi.models.movie_image.Movie_Image
 import retrofit2.http.GET
 import retrofit2.http.Path
 
@@ -20,4 +21,7 @@ interface ApiService {
 
     @GET("movie/upcoming?api_key=a82817a0b228f49f3be9fdfeae2c5111")
     suspend fun getUpcomingMovies(): Movie_Model
+
+    @GET("movie/{movie_id}/images?api_key=a82817a0b228f49f3be9fdfeae2c5111")
+    suspend fun getMovieImages(@Path("movie_id") movie_id: String): Movie_Image
 }

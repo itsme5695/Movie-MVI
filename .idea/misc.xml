@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/drawable/card_background.xml" value="0.107" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/drawable/frame_background.xml" value="0.107" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/fragment_home.xml" value="0.10395814376706096" />
-        <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/fragment_movie.xml" value="0.176" />
+        <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/fragment_movie.xml" value="0.2" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/fragment_recent_rv_item.xml" value="0.2359375" />
+        <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/movie_image_items.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/recent_rv_item.xml" value="0.1875" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/menu/my_menu.xml" value="0.25" />
       </map>

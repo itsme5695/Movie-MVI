@@ -10,4 +10,9 @@
         android:name="com.example.moviemvi.view.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.example.moviemvi.view.MovieFragment"
+        android:label="fragment_movie"
+        tools:layout="@layout/fragment_movie" />
 </navigation>

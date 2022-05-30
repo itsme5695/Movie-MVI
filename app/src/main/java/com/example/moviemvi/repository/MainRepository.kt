@@ -10,5 +10,6 @@ class MainRepository(private val apiService: ApiService, private var str:String)
 
     suspend fun getMovieSuggestions() = apiService.getMovieSuggestions(str)
     suspend fun getUpcomingMovies() = apiService.getUpcomingMovies()
+    suspend fun getMovieImages() = apiService.getMovieImages(str)
 
 }

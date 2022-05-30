@@ -41,6 +41,7 @@ class MainViewModel(
                 MainState.MoviesSearch(repository.searchMovie())
                 MainState.MoviesSuggestions(repository.getMovieSuggestions())
                 MainState.MoviesUpcoming(repository.getUpcomingMovies())
+                MainState.MovieImages(repository.getMovieImages())
             } catch (e: Exception) {
                 MainState.Error(e.localizedMessage)
             }
