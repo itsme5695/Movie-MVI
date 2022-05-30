@@ -36,7 +36,11 @@ class MainViewModel(
         viewModelScope.launch {
             state.value = MainState.Loading
             state.value = try {
-                MainState.Movies(repository.getMovieById())
+                MainState.MoviesById(repository.getMovieById())
+                MainState.MoviesPopular(repository.getPopularMovies())
+                MainState.MoviesSearch(repository.searchMovie())
+                MainState.MoviesSuggestions(repository.getMovieSuggestions())
+                MainState.MoviesUpcoming(repository.getUpcomingMovies())
             } catch (e: Exception) {
                 MainState.Error(e.localizedMessage)
             }
