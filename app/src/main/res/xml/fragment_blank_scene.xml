@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="500">
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0.1"
+                motion:framePosition="10"
+                motion:motionTarget="@+id/tv_info" />
+            <KeyAttribute
+                android:alpha="0.8"
+                motion:framePosition="80"
+                motion:motionTarget="@+id/imageButton_1" />
+            <KeyAttribute
+                android:alpha="0.1"
+                motion:framePosition="99"
+                motion:motionTarget="@+id/imageButton_2" />
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="10"
+                motion:motionTarget="@+id/imageButton_2" />
+            <KeyAttribute
+                android:alpha="0.8"
+                motion:framePosition="0"
+                motion:motionTarget="@+id/imageButton_1" />
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="56"
+                motion:motionTarget="@+id/imageButton_2" />
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="80"
+                motion:motionTarget="@+id/imageButton_2" />
+        </KeyFrameSet>
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:onTouchUp="autoComplete"
+            motion:touchAnchorId="@id/scroll_view"
+            motion:touchAnchorSide="top" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start" />
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/content_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/tv_title"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/content_image" />
+        <Constraint
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/tv_title" />
+        <Constraint
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/tv_info" />
+        <Constraint
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintBottom_toTopOf="@id/layout"
+            motion:layout_constraintTop_toBottomOf="@id/title_back_decor"
+            motion:layout_constraintTop_toTopOf="@id/title_back_decor" />
+        <Constraint
+            android:id="@+id/imageButton_2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:visibility="visible"
+            motion:layout_constraintBottom_toBottomOf="@id/btn_bookmark"
+            motion:layout_constraintRight_toLeftOf="@id/btn_bookmark"
+            motion:layout_constraintTop_toTopOf="@id/btn_bookmark" />
+        <Constraint
+            android:id="@+id/imageButton_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toBottomOf="@id/btn_bookmark"
+            motion:layout_constraintRight_toLeftOf="@id/btn_bookmark"
+            motion:layout_constraintTop_toTopOf="@id/btn_bookmark" />
+    </ConstraintSet>
+</MotionScene>
