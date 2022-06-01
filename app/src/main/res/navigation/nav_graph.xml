@@ -3,30 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/homeFragment">
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.example.moviemvi.view.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        android:id="@+id/homeFragment"
+        android:name="com.example.moviemvi.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/blankFragment"
-        android:name="com.example.moviemvi.view.BlankFragment"
-        android:label="fragment_blank"
-        tools:layout="@layout/fragment_blank" />
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.moviemvi.ui.favouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" />
     <fragment
-        android:id="@+id/bookmarkFragment"
-        android:name="com.example.moviemvi.view.BookmarkFragment"
-        android:label="fragment_bookmark"
-        tools:layout="@layout/fragment_bookmark" />
+        android:id="@+id/infoPageFragment"
+        android:name="com.example.moviemvi.ui.InfoPageFragment"
+        android:label="fragment_info_page"
+        tools:layout="@layout/fragment_info_page" />
     <fragment
-        android:id="@+id/cabinetFragment"
-        android:name="com.example.moviemvi.view.CabinetFragment"
-        android:label="fragment_cabinet"
-        tools:layout="@layout/fragment_cabinet" />
-    <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.example.moviemvi.view.SearchFragment"
-        android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        android:id="@+id/topMoveFragment"
+        android:name="com.example.moviemvi.ui.TopMoveFragment"
+        android:label="fragment_top_move"
+        tools:layout="@layout/fragment_top_move" />
 </navigation>

@@ -1,13 +1,11 @@
 package com.example.moviemvi
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.PopupMenu
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
 import com.example.moviemvi.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,38 +16,34 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.nav_host_fragment_container) as NavHostFragment
-        val navController = navHostFragment.navController
-        setupSmoothBottomMenu(navController)
-        navController.addOnDestinationChangedListener { _, destiantion, _ ->
-            when (destiantion.id) {
-                R.id.mainFragment -> {
-                    binding.bottomNavigation.visibility = View.VISIBLE
-                }
-                R.id.bookmarkFragment -> {
-                    binding.bottomNavigation.visibility = View.VISIBLE
-                }
-                R.id.cabinetFragment -> {
-                    binding.bottomNavigation.visibility = View.VISIBLE
-                }
-                R.id.blankFragment -> {
-                    binding.bottomNavigation.visibility = View.GONE
-                }
-            }
-        }
-
-
-
-    }
-    override fun onNavigateUp(): Boolean {
-        return Navigation.findNavController(this, R.id.nav_host_fragment_container).navigateUp()
+        setupSmoothBottomMenu()
     }
 
-    private fun setupSmoothBottomMenu(navController: NavController) {
-        val popupMenu = androidx.appcompat.widget.PopupMenu(this, binding.bottomNavigation)
-        popupMenu.inflate(R.menu.menu_bottom)
+    private fun setupSmoothBottomMenu() {
+        navController = findNavController(R.id.nav_controller_view)
+//        setupActionBarWithNavController(navController)
+        val popupMenu = PopupMenu(this, null)
+        popupMenu.inflate(R.menu.menu)
         val menu = popupMenu.menu
+
         binding.bottomNavigation.setupWithNavController(menu, navController)
+
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp() || super.onSupportNavigateUp()
+    }
+
+    fun viewGone() {
+        binding.bottomNavigation.visibility = View.GONE
+    }
+
+    fun viewVisiblite() {
+        binding.bottomNavigation.visibility = View.VISIBLE
+    }
+
+    override fun onStart() {
+        super.onStart()
     }
 }
+

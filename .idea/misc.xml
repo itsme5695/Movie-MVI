@@ -5,13 +5,15 @@
       <map>
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/drawable/bnv_tab_item_foreground.xml" value="0.107" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/drawable/button_back.xml" value="0.107" />
+        <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/drawable/buy_ticket.xml" value="0.107" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/drawable/card_background.xml" value="0.107" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/drawable/content_description_back.xml" value="0.107" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/drawable/frame_background.xml" value="0.107" />
-        <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/fragment_blank.xml" value="0.22870370370370371" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/fragment_bookmark.xml" value="0.25" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/fragment_cabinet.xml" value="0.25" />
+        <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/fragment_favourite.xml" value="0.25" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/fragment_home.xml" value="0.10395814376706096" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/fragment_main.xml" value="0.25" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/fragment_movie.xml" value="0.2" />
@@ -21,6 +23,8 @@
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/item_single_pager.xml" value="0.25" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/movie_image_items.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/recent_rv_item.xml" value="0.1875" />
+        <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/layout/toolbar.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/menu/menu.xml" value="0.25" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/menu/menu_bottom.xml" value="0.25" />
         <entry key="..\:/Users/otabe/AndroidStudioProjects/MovieMVI/app/src/main/res/menu/my_menu.xml" value="0.25" />
       </map>
